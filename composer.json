@@ -1,0 +1,21 @@
+{
+  "authors": [
+    {
+      "name": "Yupiel",
+      "email": "stefan_mitrovic@outlook.com"
+    }
+  ],
+  "name": "smitrovi/yupiel-book",
+  "description": "Book custom type Plugin",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Yupiel\\Book\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "ext-json": "*"
+  }
+}

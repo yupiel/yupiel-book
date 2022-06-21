@@ -9,9 +9,9 @@ class BookOptions
 {
     public static function init()
     {
+        BookExport::init();
+        BookImport::init();
         add_action('admin_menu', [__CLASS__, 'yupielbook_register_options_page']);
-        add_action('admin_post_generate_books_json_file', [new BookExport, 'generate_books_json_file']);
-        add_action('admin_post_import_books_json_file', [new BookImport, 'import_books_json_file']);
     }
 
     public static function yupielbook_register_options_page()
